@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.myapp.mobile" version="2.25" xmlns="http://www.w3.org/ns/widgets">
+  <name>Homework Checklist</name>
+  <description>Homework Checklist</description>
+
+  <icon src="Homework.png" />
+</widget> 
