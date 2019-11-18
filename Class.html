@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 6</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="_css/AppliedCss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="_css/Project.css" />
+    <link rel="stylesheet" href="_css/jquery.mobile.icons.min.css" />
+    	<script>
+            $("#testBtn").click(function() {
+            	var itemToAdd = $.trim($("#additem").val());
+            	if(itemToAdd == "") return;
+            	$("#theList").append("<li>"+"<input type='checkbox'>"+itemToAdd+"<li>");
+            });
+        </script>
+</head>
+<body>
+<!-- Randall Mowen
+     Class.html
+     INFO2439
+     Thoendel
+     11/05/19
+-->
+
+<div data-role="page" id="Home">
+    <header>
+    <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+    <h1>Classes</h1>
+        <div data-role="navbar" class="#nav">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="School.html">School Information</a></li>
+                <li><a href="Document.html">Documentation</a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+    <div data-role="main" class="ui-content">
+    
+        <ul data-role="listview" data-inset="true">
+           <li><a href="#Science" rel="external">Science</a></li>
+           <li><a href="#History" rel="external">History</a></li>
+           <li><a href="#English" rel="external">English</a></li>
+           <li><a href="#Math" rel="external">Math</a></li>
+           <li><a href="#El1" rel="external">Elective #1</a></li>
+           <li><a href="#El2" rel="external">Elective #2</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="footernav" data-theme="b">Email any questions to: <a href="mailto:rjmowen1@mail.mccneb.edu" class="ui-btn-active">
+        Randall Mowen</a>
+    </div>
+</div>
+
+<div data-role="page" id="Science">
+	<header>
+    <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+        <a href="Class.html" data-role="button" data-icon="arrow-1">Back</a>
+        <h1>Science</h1>
+        </div>
+    </header>
+	
+	<div role="main" class="ui-content">
+		<ul id="ScienceLi" data-role="listview" data-inset="true">
+		</ul>
+		
+		<form>
+		<div data-role="fieldcontain">
+		    <label for="additem">New Assignment</label>
+		    <input type="text" name="additem" id="additem" value=""  />
+		</div>	
+		<input type="button" id="testBtn1" value="Add Assignment">
+		</form>
+		<script>
+            $("#testBtn1").click(function() {
+            	var itemToAdd = $.trim($("#additem").val());
+            	if(itemToAdd == "") return;
+            	$("#ScienceLi").append("<li>"+"<input type='checkbox'>"+itemToAdd+"<li>");
+            });
+        </script>
+	</div>
+</div>
+
+<div data-role="page" id="History">
+	<header>
+    <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+        <a href="Class.html" data-role="button" data-icon="arrow-1">Back</a>
+        <h1>History</h1>
+        </div>
+    </header>
+	
+	<div role="main" class="ui-content">
+		<ul id="HistoryLi" data-role="listview" data-inset="true">
+		</ul>
+		
+		<form>
+		<div data-role="fieldcontain">
+		    <label for="additem">New Assignment</label>
+		    <input type="text" name="additem" id="additem" value=""  />
+		</div>	
+		<input type="button" id="testBtn2" value="Add Assignment">
+		</form>
+		<script>
+            $("#testBtn2").click(function() {
+            	var itemToAdd = $.trim($("#additem").val());
+            	if(itemToAdd == "") return;
+            	$("#HistoryLi").append("<li>"+"<input type='checkbox'>"+itemToAdd+"<li>");
+            });
+        </script>
+	</div>
+</div>
+
+<div data-role="page" id="English">
+	<header>
+    <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+        <a href="Class.html" data-role="button" data-icon="arrow-1">Back</a>
+        <h1>English</h1>
+        </div>
+    </header>
+	
+	<div role="main" class="ui-content">
+		<ul id="EnglishLi" data-role="listview" data-inset="true">
+		</ul>
+		
+		<form>
+		<div data-role="fieldcontain">
+		    <label for="additem">New Assignment</label>
+		    <input type="text" name="additem" id="additem" value=""  />
+		</div>	
+		<input type="button" id="testBtn3" value="Add Assignment">
+		</form>
+		<script>
+            $("#testBtn3").click(function() {
+            	var itemToAdd = $.trim($("#additem").val());
+            	if(itemToAdd == "") return;
+            	$("#EnglishLi").append("<li>"+"<input type='checkbox'>"+itemToAdd+"<li>");
+            });
+        </script>
+	</div>
+</div>
+
+<div data-role="page" id="Math">
+	<header>
+    <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+        <a href="Class.html" data-role="button" data-icon="arrow-1">Back</a>
+        <h1>Math</h1>
+        </div>
+    </header>
+	
+	<div role="main" class="ui-content">
+		<ul id="MathLi" data-role="listview" data-inset="true">
+		</ul>
+		
+		<form>
+		<div data-role="fieldcontain">
+		    <label for="additem">New Assignment</label>
+		    <input type="text" name="additem" id="additem" value=""  />
+		</div>	
+		<input type="button" id="testBtn4" value="Add Assignment">
+		</form>
+		<script>
+            $("#testBtn4").click(function() {
+            	var itemToAdd = $.trim($("#additem").val());
+            	if(itemToAdd == "") return;
+            	$("#MathLi").append("<li>"+"<input type='checkbox'>"+itemToAdd+"<li>");
+            });
+        </script>
+	</div>
+</div>
+
+<div data-role="page" id="El1">
+	<header>
+    <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+        <a href="Class.html" data-role="button" data-icon="arrow-1">Back</a>
+        <h1>Elective #1</h1>
+        </div>
+    </header>
+	
+	<div role="main" class="ui-content">
+		<ul id="El1Li" data-role="listview" data-inset="true">
+		</ul>
+		
+		<form>
+		<div data-role="fieldcontain">
+		    <label for="additem">New Assignment</label>
+		    <input type="text" name="additem" id="additem" value=""  />
+		</div>	
+		<input type="button" id="testBtn5" value="Add Assignment">
+		</form>
+		<script>
+            $("#testBtn5").click(function() {
+            	var itemToAdd = $.trim($("#additem").val());
+            	if(itemToAdd == "") return;
+            	$("#El1Li").append("<li>"+"<input type='checkbox'>"+itemToAdd+"<li>");
+            });
+        </script>
+	</div>
+</div>
+
+<div data-role="page" id="El2">
+	<header>
+    <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+        <a href="Class.html" data-role="button" data-icon="arrow-1">Back</a>
+        <h1>Elective #2</h1>
+        </div>
+    </header>
+	
+	<div role="main" class="ui-content">
+		<ul id="El2Li" data-role="listview" data-inset="true">
+		</ul>
+		
+		<form>
+		<div data-role="fieldcontain">
+		    <label for="additem">New Assignment</label>
+		    <input type="text" name="additem" id="additem" value=""  />
+		</div>	
+		<input type="button" id="testBtn6" value="Add Assignment">
+		</form>
+		<script>
+            $("#testBtn6").click(function() {
+            	var itemToAdd = $.trim($("#additem").val());
+            	if(itemToAdd == "") return;
+            	$("#El2Li").append("<li>"+"<input type='checkbox'>"+itemToAdd+"<li>");
+            });
+        </script>
+	</div>
+</div>
+
+</body>
+</html>  
